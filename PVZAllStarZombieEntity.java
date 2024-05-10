@@ -51,7 +51,7 @@ public class PVZAllStarZombieEntity extends ZombieEntity implements IAnimatable 
 	protected PlayState predicate(final AnimationEvent event) {
 		if (event.isMoving()) {
 			event.getController().setAnimation(ModEntityGeoAnimations.PVZ_ALLSTAR_RUNNING_ANIM);
-			return PlayState.CONTINUE;
+			return PlayState.STOP;
 		}
 
 		event.getController().setAnimation(ModEntityGeoAnimations.PVZ_ZOMBIE_IDLE_ANIM);
